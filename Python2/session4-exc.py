@@ -81,19 +81,39 @@ class Gene(DNASequence):
 		Hamm=seq1_set-seq2_set
 		return len(Hamm)
 
+class RNAsequence(object):
+	def __init__(self, RNAseq):
+		self.RNAseq=RNAseq
+		self.codon_dict=defaultdict(str)
+		with open("codon_table.txt") as f:
+			for each in f:
+				key=each.split()[0]
+				value=each.split()[1]
+				self.codon_dict[key]=value
+	def translate(self):
+		protein_list=[]
+		codon=[n for n in xrange(0,len(self.RNAseq),3)]
+		for i in codon:
+			protein_list.append(self.codon_dict[self.RNAseq[i:i+3]])
+		protein=''.join(protein_list)
+		protein=protein.replace('STOP','')
+		return protein
 
-seq=[]
-with open('rosalind_hamm.txt') as f:
-	for each in f:
-		each=each.strip()
-		seq.append(each)
-
-seq1=seq[0]
-seq2=seq[1]
-print Gene(seq1).Hamm(seq2)
+seq="AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA"
+myRNAsequence=RNAsequence(seq)
+print myRNAsequence.translate()
 
 
 
+# seq=[]
+# with open('rosalind_hamm.txt') as f:
+# 	for each in f:
+# 		each=each.strip()
+# 		seq.append(each)
+
+# seq1=seq[0]
+# seq2=seq[1]
+# print Gene(seq1).Hamm(seq2)
 
 # DNA=open('rosalind_dna.txt')
 # seq=DNA.readlines()[0].strip()
@@ -108,4 +128,7 @@ print Gene(seq1).Hamm(seq2)
 # mylist = [DNASequence("ATCCCG", "sequence 1"), DNASequence("AAAAATTTT", "sequence 2")]
 # for seq in mylist:
 # 	print seq
-# #sidebargit test!!
+
+
+
+
