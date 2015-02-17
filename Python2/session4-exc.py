@@ -70,15 +70,15 @@ class FASTAFile(object):
 #Define a new class inherited from DNASequence class above
 class Gene(DNASequence):
 	def Hamm(self,new_sequence):
-		self.seq1_dict={}
-		self.seq2_dict={}
+		seq1_dict={}
+		seq2_dict={}
 		for position,base in enumerate(self.sequence):
-			self.seq1_dict[position]=base
+			seq1_dict[position]=base
 		for position,base in enumerate(new_sequence):
-			self.seq2_dict[position]=base
-		self.seq1_set=set(self.seq1_dict.iteritems())
-		self.seq2_set=set(self.seq2_dict.iteritems())
-		Hamm=self.seq1_set-self.seq2_set
+			seq2_dict[position]=base
+		seq1_set=set(seq1_dict.iteritems())
+		seq2_set=set(seq2_dict.iteritems())
+		Hamm=seq1_set-seq2_set
 		return len(Hamm)
 
 
@@ -90,9 +90,8 @@ with open('rosalind_hamm.txt') as f:
 
 seq1=seq[0]
 seq2=seq[1]
-
 print Gene(seq1).Hamm(seq2)
-#print Gene(seq1).Hamm(seq2)
+
 
 
 
