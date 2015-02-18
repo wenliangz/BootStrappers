@@ -16,50 +16,41 @@
 	"buffers":
 	[
 		{
-			"file": "Python2/session4-exc.py",
+			"file": "Python2/session4_exc.py",
 			"settings":
 			{
-				"buffer_size": 1928,
+				"buffer_size": 3585,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "[SideBarGit@SublimeText] \nOn branch master\nYour branch is up-to-date with 'origin/master'.\n\nUntracked files:\n	BootStrapper project.sublime-project\n	BootStrapper project.sublime-workspace\n\nnothing added to commit but untracked files present",
+			"file": "Python2/hamm.py",
 			"settings":
 			{
-				"buffer_size": 239,
+				"buffer_size": 823,
 				"line_ending": "Windows",
-				"name": "[SideBarGit@SublimeText]",
-				"scratch": true
+				"name": "from session4-exc.py import Gene"
 			}
 		},
 		{
-			"contents": "[SideBarGit@SublimeText BootStrappers/] cmd /C git push\n\n# Improve this command, the output or the tab title by posting here:\n# http://www.sublimetext.com/forum/viewtopic.php?f=5&t=3405\n# Tip: F5 will run the command again and refresh the contents of this tab\n\nEverything up-to-date",
+			"file": "Python2/rosalind_hamm.txt",
 			"settings":
 			{
-				"buffer_size": 282,
-				"line_ending": "Windows",
-				"name": "No Title",
-				"scratch": true
-			}
-		},
-		{
-			"contents": "[SideBarGit@SublimeText] \n[master 85eb672] Add project file\n 2 files changed, 507 insertions(+)\n create mode 100644 BootStrapper project.sublime-project\n create mode 100644 BootStrapper project.sublime-workspace\nwarning: LF will be replaced by CRLF in BootStrapper project.sublime-project.\nThe file will have its original line endings in your working directory.\nwarning: LF will be replaced by CRLF in BootStrapper project.sublime-workspace.\nThe file will have its original line endings in your working directory.\nwarning: LF will be replaced by CRLF in BootStrapper project.sublime-project.\nThe file will have its original line endings in your working directory.\nwarning: LF will be replaced by CRLF in BootStrapper project.sublime-workspace.\nThe file will have its original line endings in your working directory.",
-			"settings":
-			{
-				"buffer_size": 815,
-				"line_ending": "Windows",
-				"name": "[SideBarGit@SublimeText]",
-				"scratch": true
+				"buffer_size": 1956,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "Packages/Python/Python.sublime-build",
 	"command_palette":
 	{
-		"height": 490.0,
+		"height": 58.0,
 		"selected_items":
 		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
 			[
 				"git add",
 				"Git (SideBarGit): Add & Commit & Push…"
@@ -173,7 +164,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 912.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -193,11 +184,6 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/C/Users/Wenliang/Documents/GitHub/BootStrappers",
-		"/C/Users/Wenliang/Documents/GitHub/BootStrappers/Python2"
-	],
 	"file_history":
 	[
 		"/C/Users/Wenliang/Documents/GitHub/Rosalind/rosalind_hamm.txt",
@@ -302,24 +288,24 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Python2/session4-exc.py",
-					"semi_transient": true,
+					"file": "Python2/session4_exc.py",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1928,
+						"buffer_size": 3585,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2746,
+								2746
 							]
 						],
 						"settings":
@@ -328,36 +314,36 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1282.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "Python2/hamm.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 239,
+						"buffer_size": 823,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								758,
+								758
 							]
 						],
 						"settings":
 						{
-							"auto_name": "[SideBarGit@SublimeText]",
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": false
+							"auto_name": "from session4-exc.py import Gene",
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 41.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -365,10 +351,11 @@
 				},
 				{
 					"buffer": 2,
-					"semi_transient": false,
+					"file": "Python2/rosalind_hamm.txt",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 282,
+						"buffer_size": 1956,
 						"regions":
 						{
 						},
@@ -381,24 +368,6 @@
 						],
 						"settings":
 						{
-							"SideBarGitBackground": false,
-							"SideBarGitCommand":
-							[
-								"cmd",
-								"/C",
-								"git",
-								"push"
-							],
-							"SideBarGitIsASideBarGitTab": true,
-							"SideBarGitItem": "C:\\Users\\Wenliang\\Documents\\GitHub\\BootStrappers",
-							"SideBarGitModal": true,
-							"SideBarGitNoResults": "No output to show",
-							"SideBarGitSyntaxFile": false,
-							"SideBarGitTitle": "No Title",
-							"SideBarGitToStatusBar": false,
-							"default_dir": "C:\\Users\\Wenliang\\Documents\\GitHub",
-							"encoding": "UTF-8",
-							"fallback_encoding": "UTF-8",
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -406,35 +375,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 815,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_name": "[SideBarGit@SublimeText]",
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -473,7 +413,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 328.0
+		"height": 191.0
 	},
 	"output.find_results":
 	{
@@ -521,7 +461,6 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
 	"settings":
 	{
 	},
@@ -529,7 +468,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 337.0,
+	"side_bar_width": 204.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

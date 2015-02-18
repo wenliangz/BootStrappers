@@ -41,6 +41,19 @@ class DNASequence(object):
 		gc_percent=float(gc)/len(self.sequence)
 		return gc_percent
 	
+	def Hamm(self,new_sequence):
+		#print type(new_sequence)
+		seq1_dict={}
+		seq2_dict={}
+		for position,base in enumerate(self.sequence):
+			seq1_dict[position]=base
+		for position,base in enumerate(new_sequence.sequence):
+			seq2_dict[position]=base
+		seq1_set=set(seq1_dict.iteritems())
+		seq2_set=set(seq2_dict.iteritems())
+		Hamm=seq1_set-seq2_set
+		return len(Hamm)
+	
 # class for parsing FASTA file
 
 class FASTAFile(object):
@@ -68,41 +81,36 @@ class FASTAFile(object):
 		return found_sequences
 
 #Define a new class inherited from DNASequence class above
-class Gene(DNASequence):
-	def Hamm(self,new_sequence):
-		seq1_dict={}
-		seq2_dict={}
-		for position,base in enumerate(self.sequence):
-			seq1_dict[position]=base
-		for position,base in enumerate(new_sequence):
-			seq2_dict[position]=base
-		seq1_set=set(seq1_dict.iteritems())
-		seq2_set=set(seq2_dict.iteritems())
-		Hamm=seq1_set-seq2_set
-		return len(Hamm)
+#
 
+
+#Define a new classs for RNA sequence input
 class RNAsequence(object):
 	def __init__(self, RNAseq):
 		self.RNAseq=RNAseq
 		self.codon_dict=defaultdict(str)
 		with open("codon_table.txt") as f:
 			for each in f:
-				key=each.split()[0]
-				value=each.split()[1]
-				self.codon_dict[key]=value
+				toks = each.split()
+				self.codon_dict[toks[0]] = toks[1]
 	def translate(self):
-		protein_list=[]
+		codon_list=[]
 		codon=[n for n in xrange(0,len(self.RNAseq),3)]
 		for i in codon:
-			protein_list.append(self.codon_dict[self.RNAseq[i:i+3]])
-		protein=''.join(protein_list)
-		protein=protein.replace('STOP','')
+			if self.codon_dict[self.RNAseq[i:i+3]]=="STOP":
+				break
+			codon_list.append(self.codon_dict[self.RNAseq[i:i+3]])
+		protein=''.join(codon_list)
+		#protein=protein.replace('STOP','')
 		return protein
 
-seq="AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA"
-myRNAsequence=RNAsequence(seq)
-print myRNAsequence.translate()
+def print_translate():
+	seq="AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA"
+	myRNAsequence=RNAsequence(seq)
+	print myRNAsequence.translate()
 
+if __name__ == '__main__':
+    print_translate()
 
 
 # seq=[]
