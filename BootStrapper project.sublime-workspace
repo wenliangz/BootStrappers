@@ -16,69 +16,27 @@
 	"buffers":
 	[
 		{
-			"file": "Python2/session4-exc.py",
+			"file": "Python2/hamm.py",
 			"settings":
 			{
-				"buffer_size": 3411,
+				"buffer_size": 823,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "[SideBarGit@SublimeText BootStrappers/] git add -- .\n\n# Improve this command, the output or the tab title by posting here:\n# http://www.sublimetext.com/forum/viewtopic.php?f=5&t=3405\n# Tip: F5 will run the command again and refresh the contents of this tab\n\nwarning: LF will be replaced by CRLF in Python2/codon_table.txt.\nThe file will have its original line endings in your working directory.",
+			"file": "Python2/session4_exc.py",
 			"settings":
 			{
-				"buffer_size": 394,
-				"line_ending": "Windows",
-				"name": "No Title",
-				"scratch": true
+				"buffer_size": 3585,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "[SideBarGit@SublimeText] \n[master a5ea665] Add RNAseqence class and translate method\n 2 files changed, 101 insertions(+), 14 deletions(-)\n create mode 100644 Python2/codon_table.txt\nwarning: LF will be replaced by CRLF in Python2/codon_table.txt.\nThe file will have its original line endings in your working directory.\nwarning: LF will be replaced by CRLF in Python2/codon_table.txt.\nThe file will have its original line endings in your working directory.",
+			"file": "/C/Users/Wenliang/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 			"settings":
 			{
-				"buffer_size": 455,
-				"line_ending": "Windows",
-				"name": "[SideBarGit@SublimeText]",
-				"scratch": true
-			}
-		},
-		{
-			"contents": "[SideBarGit@SublimeText BootStrappers/] cmd /C git push\n\n# Improve this command, the output or the tab title by posting here:\n# http://www.sublimetext.com/forum/viewtopic.php?f=5&t=3405\n# Tip: F5 will run the command again and refresh the contents of this tab\n\nTo https://github.com/wenliangz/BootStrappers.git\n   3d0a183..a5ea665  master -> master",
-			"settings":
-			{
-				"buffer_size": 348,
-				"line_ending": "Windows",
-				"name": "No Title",
-				"scratch": true
-			}
-		},
-		{
-			"contents": "Package Control Messages\n========================\n\nPackage Control:\n---------------\n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n",
-			"settings":
-			{
-				"buffer_size": 2443,
-				"line_ending": "Windows",
-				"name": "Package Control Messages",
-				"scratch": true
-			}
-		},
-		{
-			"file": "Python2/codon_table.txt",
-			"settings":
-			{
-				"buffer_size": 393,
+				"buffer_size": 388,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Python 2.7.8 |Anaconda 2.1.0 (64-bit)| (default, Jul  2 2014, 15:12:11) [MSC v.1500 64 bit (AMD64)] on win32\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\nAnaconda is brought to you by Continuum Analytics.\nPlease check out: http://continuum.io/thanks and https://binstar.org\n>>> xrange(0,9,3)\nxrange(0, 9, 3)\n>>> print xrange(0,9,3)\nxrange(0, 9, 3)\n>>> print a[i for i in xrange(0,9,3)]\n  File \"<stdin>\", line 1\n    print a[i for i in xrange(0,9,3)]\n                ^\nSyntaxError: invalid syntax\n>>> print [i for i in xrange(0,9,3)]\n[0, 3, 6]\n>>> ",
-			"settings":
-			{
-				"buffer_size": 572,
-				"line_ending": "Windows",
-				"name": "*REPL* [python]",
-				"scratch": true
 			}
 		}
 	],
@@ -228,11 +186,16 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Wenliang/Documents/GitHub/BootStrappers/Python2/rosalind_dna.txt",
+		"/C/Users/Wenliang/Documents/GitHub/BootStrappers/Python2/ENCFF002COQ.narrowPeak",
+		"/C/Users/Wenliang/Documents/GitHub/BootStrappers/Python2/ENCFF001VZW.narrowPeak",
+		"/C/Users/Wenliang/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Wenliang/Documents/GitHub/BootStrappers/Python2/session4_exc.py",
+		"/C/Users/Wenliang/Documents/GitHub/BootStrappers/Python2/session4-exc.py",
 		"/I/study.areas/computer/programming/Python/Rosalind/rosalind_dna.txt",
 		"/C/Users/Wenliang/Documents/GitHub/Rosalind/rosalind_hamm.txt",
 		"/C/Users/Wenliang/Documents/GitHub/Rosalind/rosalind_hamm.py",
 		"/C/Users/Wenliang/Documents/GitHub/BootStrappers/Python2/Python2 project.sublime-project",
-		"/C/Users/Wenliang/Documents/GitHub/BootStrappers/Python2/session4-exc.py",
 		"/C/Users/Wenliang/Documents/GitHub/BootStrappers/Python2/session1-exc.py",
 		"/C/Users/Wenliang/Documents/GitHub/Rosalind/Rosalind project.sublime-project",
 		"/C/Users/Wenliang/Documents/GitHub/Rosalind/Rosalind project.sublime-workspace",
@@ -251,7 +214,6 @@
 		"/C/Users/Wenliang/AppData/Roaming/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
 		"/C/Users/Wenliang/Documents/GitHub/newGitTest/session2-exc.py",
 		"/C/Users/Wenliang/Documents/GitHub/newGitTest/session1-exc.py",
-		"/C/Users/Wenliang/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Wenliang/AppData/Roaming/Sublime Text 3/Packages/User/SublimePython.sublime-settings",
 		"/C/Users/Wenliang/AppData/Roaming/Sublime Text 3/Packages/User/JSON.sublime-settings",
 		"/C/Users/Wenliang/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
@@ -331,45 +293,16 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Python2/session4-exc.py",
+					"file": "Python2/hamm.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3411,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2790,
-								2790
-							]
-						],
-						"settings":
-						{
-							"pep8": false,
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2032.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 394,
+						"buffer_size": 823,
 						"regions":
 						{
 						},
@@ -382,99 +315,7 @@
 						],
 						"settings":
 						{
-							"SideBarGitBackground": false,
-							"SideBarGitCommand":
-							[
-								"git",
-								"add",
-								"--",
-								"."
-							],
-							"SideBarGitIsASideBarGitTab": true,
-							"SideBarGitItem": "C:\\Users\\Wenliang\\Documents\\GitHub\\BootStrappers",
-							"SideBarGitModal": false,
-							"SideBarGitNoResults": "No output to show",
-							"SideBarGitSyntaxFile": false,
-							"SideBarGitTitle": "No Title",
-							"SideBarGitToStatusBar": false,
-							"default_dir": "C:\\Users\\Wenliang\\Documents\\GitHub",
-							"encoding": "UTF-8",
-							"fallback_encoding": "UTF-8",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 455,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_name": "[SideBarGit@SublimeText]",
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 348,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"SideBarGitBackground": false,
-							"SideBarGitCommand":
-							[
-								"cmd",
-								"/C",
-								"git",
-								"push"
-							],
-							"SideBarGitIsASideBarGitTab": true,
-							"SideBarGitItem": "C:\\Users\\Wenliang\\Documents\\GitHub\\BootStrappers",
-							"SideBarGitModal": true,
-							"SideBarGitNoResults": "No output to show",
-							"SideBarGitSyntaxFile": false,
-							"SideBarGitTitle": "No Title",
-							"SideBarGitToStatusBar": false,
-							"default_dir": "C:\\Users\\Wenliang\\Documents\\GitHub",
-							"encoding": "UTF-8",
-							"fallback_encoding": "UTF-8",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -484,25 +325,26 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 1,
+					"file": "Python2/session4_exc.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2443,
+						"buffer_size": 3585,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2443,
-								2443
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": true
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -512,96 +354,32 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "Python2/codon_table.txt",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 393,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5,
-								5
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 6,
+					"buffer": 2,
+					"file": "/C/Users/Wenliang/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 572,
+						"buffer_size": 388,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								572,
-								572
+								373,
+								373
 							]
 						],
 						"settings":
 						{
-							"auto_complete": true,
-							"auto_indent": false,
-							"detect_indentation": false,
-							"gutter": false,
-							"history_arrows": true,
-							"indent_subsequent_lines": false,
-							"line_numbers": false,
-							"repl": true,
-							"repl_external_id": "python",
-							"repl_id": "e3aa3572bd2a461b82a8bec332b0e917",
-							"repl_restart_args":
-							{
-								"cmd":
-								[
-									"python",
-									"-i",
-									"-u"
-								],
-								"cwd": "$file_path",
-								"encoding": "utf8",
-								"extend_env":
-								{
-									"PYTHONIOENCODING": "utf-8"
-								},
-								"external_id": "python",
-								"syntax": "Packages/Python/Python.tmLanguage",
-								"type": "subprocess"
-							},
-							"repl_sublime2": false,
-							"smart_indent": false,
-							"spell_check": false,
-							"syntax": "Packages/Python/Python.tmLanguage",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -624,18 +402,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
